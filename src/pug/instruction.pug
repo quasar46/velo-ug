@@ -1,0 +1,22 @@
+extends templates/layout
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Видео сборки
+
+        .instruction
+            .instruction__wrapper._container 
+                .instruction__head 
+                    h2.instruction__title.title Наши велосипеды легко собираются 
+                    .instruction__descr Убедитесь в этом сами, просмотр видео займёт 5 минут
+                video.insctruction__video.insctruction__video--mode(src="video.mp4" controls autoplay poster="img/poster.png") 
+
+        .location 
+            .location__wrapper.location__wrapper--mount._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    .location__place Ростов-на-дону
+            #map

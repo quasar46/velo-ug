@@ -1,0 +1,104 @@
+.dealer {
+  display: flex;
+  // grid-template-columns: 1fr 500px;
+  justify-content: space-between;
+  gap: 200px;
+  @media (max-width: 1919px) {
+    gap: 100px;
+  }
+  @media (max-width: 1279px) {
+    gap: 50px;
+  }
+  @media (max-width: 999px) {
+    flex-direction: column;
+  }
+  @media (max-width: 767px) {
+    gap: 30px;
+  }
+}
+
+.dealer__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 72px;
+  font-weight: 600;
+  gap: 10px;
+  color: #00275b;
+  margin-bottom: 30px;
+  span {
+    &:first-child {
+      margin-left: -87px;
+      @media (max-width: 767px) {
+        margin-left: -29px;
+      }
+    }
+  }
+  @media (max-width: 999px) {
+    font-size: 54px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+    gap: 5px;
+    margin-bottom: 20px;
+    letter-spacing: -0.1px;
+  }
+}
+
+.dealer__head {
+  padding-left: 87px;
+  @media (max-width: 767px) {
+    padding-left: 32px;  
+  }
+}
+
+.dealer__descr {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @media (max-width: 767px) {
+    font-size: 12px;
+    gap: 10px;
+    margin-left: -32px;
+  }
+}
+
+.dealer__form {
+  max-width: 500px;
+  width: 100%;
+  @media (max-width: 999px) {
+    max-width: 100%;
+  }
+}
+
+.dealer__form-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    margin-bottom: 18px;
+  }
+}
+
+.dealer-form__footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media (max-width: 479px) {
+	flex-direction: column;
+  }
+}
+
+.dealer__submit {
+	z-index: 10;
+  min-height: 55px;
+  min-width: 205px;
+  font-size: 17px;
+  font-weight: 500;
+  @media (max-width: 479px) {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+  }
+}

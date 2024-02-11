@@ -1,0 +1,26 @@
+extends templates/layout-white
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Техподдержка
+
+        .support._container
+            h2.title.support__title Техподдержка
+            .support__content 
+                .support__links 
+                    a.support__link(href="tel:+7 (918) 599-96-21") +7 (918) 599-96-21
+                    a.support__link(href="mailto:igrushki.veloopt2@toysbag.ru") igrushki.veloopt2@toysbag.ru
+                button.btn-default Написать нам 
+
+
+        .location 
+            .location__wrapper._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    .location__place Ростов-на-дону
+            #map
+
+    script(src="js/mask.js")

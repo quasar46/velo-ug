@@ -1,0 +1,29 @@
+extends templates/layout-white
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Где купить
+
+        .markets._container
+            h2.title.markets__title Где купить товары<br> компании Вело-Юг: 
+            .markets__links 
+                a(href="")
+                    img(src="img/ozon.png" alt="ссылка на ozon") 
+                a(href="") 
+                    img(src="img/wb.png" alt="ссылка на wildberries")
+            h2.title.markets__title В нашем интернет-магазине
+            a(href="catalog.html").btn-default.markets__btn Перейти в каталог
+
+
+
+        .location 
+            .location__wrapper._container
+                .location__head.location__head--mode
+                    h2.location__title.title Магазин:
+                    .location__place г.Ростов-на-дону, ул. Днепропетровская  83
+            #map
+
+    script(src="js/mask.js")

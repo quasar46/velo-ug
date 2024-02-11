@@ -1,0 +1,382 @@
+extends templates/layout
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                a.breadcrumbs__link(href="catalog.html") Каталог
+                span Велосипеды
+        .catalog._container 
+            .catalog__head 
+                h2.catalog__title.title Велосипеды все
+                span.catalog__items-quantity 110 товаров
+        ._container.brends-wrap
+            .brends
+                a.brends__item(href="") MATCH
+
+                a.brends__item(href="") BLACKOUT
+
+                a.brends__item(href="") SCENERIDE
+
+                a.brends__item(href="")
+                    img(src="img/brends/item1.png" alt="shift")
+                a.brends__item(href="")
+                    img(src="img/brends/item2.png" alt="rocks")
+                a.brends__item(href="") FLAGMAN
+
+        .catalog__wrapper._container
+            .catalog__filter.filter 
+                .filter__block.filter__block-category
+                    h3.filter__title 
+                        span Категории
+                        svg(width="8" height="4")
+                            use(href="#nav-arrow-icn")
+                    .filter__content.active
+                        button.filter__btn Велосипеды все
+                        .filter__checks.active
+                            .filter__check
+                                input(type="checkbox" id="check1")
+                                label(for="check1") Горные
+                            .filter__check
+                                input(type="checkbox" id="check2")
+                                label(for="check2") Подростковые
+                            .filter__check
+                                input(type="checkbox" id="check3")
+                                label(for="check3") Детские
+                        button.filter__btn Самокаты
+                        .filter__checks
+                            .filter__check
+                                input(type="checkbox" id="check4")
+                                label(for="check4") Горные
+                            .filter__check
+                                input(type="checkbox" id="check5")
+                                label(for="check5") Подростковые
+                        button.filter__btn Скейтбординг
+                        .filter__checks
+                            .filter__check
+                                input(type="checkbox" id="check6")
+                                label(for="check6") Горные
+                            .filter__check
+                                input(type="checkbox" id="check7")
+                                label(for="check7") Подростковые
+                .filter__block
+                    h3.filter__title 
+                        span Бренды
+                        svg(width="8" height="4")
+                            use(href="#nav-arrow-icn")
+                    .filter__content
+                        .filter__checks
+                            .filter__check 
+                                input(type="checkbox" id="check8") 
+                                label(for="check8") BLACKOUT
+                            .filter__check 
+                                input(type="checkbox" id="check9") 
+                                label(for="check9") SCENERIDE
+                            .filter__check 
+                                input(type="checkbox" id="check10") 
+                                label(for="check10") MATCH
+                            .filter__check 
+                                input(type="checkbox" id="check11") 
+                                label(for="check11") SHIFT
+                            .filter__check 
+                                input(type="checkbox" id="check12") 
+                                label(for="check12") PULSE
+                            .filter__check 
+                                input(type="checkbox" id="check13") 
+                                label(for="check13") FLAGMAN
+                            .filter__check 
+                                input(type="checkbox" id="check14") 
+                                label(for="check14") KMS
+                            .filter__check 
+                                input(type="checkbox" id="check15") 
+                                label(for="check15") Зайка
+                .filter__block
+                    h3.filter__title 
+                        span Колеса
+                        svg(width="8" height="4")
+                            use(href="#nav-arrow-icn")
+                    .filter__content
+                        .filter__checks
+                            .filter__check
+                                input(type="checkbox" id="check16")
+                                label(for="check16") 12”
+                            .filter__check
+                                input(type="checkbox" id="check17")
+                                label(for="check17") 14”
+                            .filter__check
+                                input(type="checkbox" id="check18")
+                                label(for="check18") 16”
+                            .filter__check
+                                input(type="checkbox" id="check19")
+                                label(for="check19") 18”
+                            .filter__check
+                                input(type="checkbox" id="check20")
+                                label(for="check20") 20”
+                            .filter__check
+                                input(type="checkbox" id="check21")
+                                label(for="check21") 22”
+                .filter__block
+                    h3.filter__title
+                        span Навеска
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Материал
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Пол
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Рама
+                        svg(width="8" height="4")
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Количество скоростей
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Вид тормозной системы
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Особенности
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block
+                    h3.filter__title
+                        span Цвет
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                .filter__block.filter__block-price
+                    h3.filter__title
+                        span Цена
+                        svg(width="8" height="4") 
+                            use(href="#nav-arrow-icn")
+                    .filter__content
+                        .filter__price 
+                            input.filter__price-from(type="text" placeholder="от")
+                            input.filter__price-before(type="text" placeholder="до")
+                        .filter__radios 
+                            .filter__radio 
+                                input(type="radio" id="rad1" name="price")
+                                label(for="rad1") 5000-10000 Р
+                            .filter__radio 
+                                input(type="radio" id="rad2" name="price")
+                                label(for="rad2") 10000-20000 Р
+                            .filter__radio 
+                                input(type="radio" id="rad3" name="price")
+                                label(for="rad3") 20000 и дороже
+                            .filter__radio 
+                                input(type="radio" id="rad5" name="price")
+                                label(for="rad5") Не важно
+                .filter__buttons 
+                    button.btn-default Показать
+                    button.btn-light Сбросить
+
+            .catalog__content 
+                .catalog__params
+                    select.catalog__select
+                        option(value="") Популярное
+                        option(value="") По цене
+                        option(value="") По дате
+                    button.catalog__btn-filter#openFilter 
+                        svg(width="22" height="22")
+                            use(href="#settings-icn")
+                .catalog__inner 
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                    .card 
+                        .card__pic
+                            img(src="img/popular/item5.png" alt="")
+                        .card__content
+                            .card__price 
+                                span.card__price-new 27 085 ₽
+                                span.card__price-old 57 000 ₽
+                            a(href="").card__descr Горный велосипед KMS диаметр 26”
+                        button.btn-default.card__btn Выбрать
+                ul.catalog__pagination 
+                    li.active
+                        a(href="") 1
+                    li
+                        a(href="") 2
+                    li
+                        a(href="") 3
+                    li
+                        a(href="") 4
+                    li 
+                        a.btn-light(href="") Дальше 
+
+        .recomendation._container
+            h2.recom__title.title Рекомендуем
+            .swiper.swiper-recomendation
+                .swiper-wrapper 
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+                    .swiper-slide 
+                        .card 
+                            .card__pic
+                                img(src="img/popular/item5.png" alt="")
+                            .card__content
+                                .card__price 
+                                    span.card__price-new 27 085 ₽
+                                    span.card__price-old 57 000 ₽
+                                a(href="").card__descr Горный велосипед KMS диаметр 26”
+                            button.btn-default.card__btn Выбрать
+
+
+
+
+
+
+
+        .location 
+            .location__wrapper._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    span.location__place Ростов-на-дону
+            #map.map

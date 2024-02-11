@@ -1,0 +1,101 @@
+header.header
+	.header__wrapper._container 
+		.search
+			button.search__btn
+				svg(width="10" height="16")
+					use(href="#arrow-back")
+			.search__item
+				input.search__input(type="search" placeholder="Поиск")
+		a.header__logo(href="index.html")
+			img(src="./img/logo.svg" alt="логотип вело юг") 
+		nav.header__nav.nav-menu
+			ul.mav-menu__list
+				li.nav-menu__item
+					a.nav-menu__link.active
+						span Каталог
+						svg.nav-menu-arrow(width="13" height="8")
+							use(href="#nav-arrow-icn")
+					//- submenu
+					.nav-menu__sub.submenu
+						ul.submenu__wrapper
+							li.submenu__col.submenu__col-brends 
+								h4.submenu__title Бренды
+								a.submenu__link(href="") BLACKOUT
+								a.submenu__link(href="") SCENERIDE
+								a.submenu__link(href="") MATCH
+								a.submenu__link(href="") SHIFT
+								a.submenu__link(href="") PULSE
+								a.submenu__link(href="") FLAGMAN
+								a.submenu__link(href="") KMS
+								a.submenu__link(href="") Зайка
+							li.submenu__col 
+								h4.submenu__title Велосипеды
+								a.submenu__link(href="") Взрослые
+								a.submenu__link(href="") Детские
+								a.submenu__link(href="") Подростковые
+								a.submenu__link(href="") Женские
+								a.submenu__link(href="") Мужские
+								a.submenu__link(href="") Для девочек
+								a.submenu__link(href="") Для мальчиков
+							li.submenu__col 
+								h4.submenu__title Самокаты
+								a.submenu__link(href="") Детские
+								a.submenu__link(href="") Трюковые
+								a.submenu__link(href="") Для девочек
+								a.submenu__link(href="") Для мальчиков
+							li.submenu__col 
+								h4.submenu__title Скейтбординг
+								a.submenu__link(href="") Пенниборды
+								a.submenu__link(href="") Круизеры
+								a.submenu__link(href="") Роллерсферы
+								a.submenu__link(href="") Взрослые
+								a.submenu__link(href="") Детские
+				li.nav-menu__item
+					a(href="").nav-menu__link
+						span Технологии
+				li.nav-menu__item
+					a.nav-menu__link
+						span Покупателям
+						svg.nav-menu-arrow(width="13" height="8")
+							use(href="#nav-arrow-icn")
+					//- submenu
+					ul.nav-menu__sub.submenu
+						.submenu__wrapper
+							li.submenu__col 
+								a.submenu__link(href="")  Где купить
+							li.submenu__col 
+								a.submenu__link(href="")  Видео сборки
+							li.submenu__col 
+								a.submenu__link(href="")  Техподдержка
+							li.submenu__col 
+								a.submenu__link(href="")  Написать нам
+				li.nav-menu__item
+					a(href="").nav-menu__link
+						span Контакты
+				li.nav-menu__item
+					a(href="").nav-menu__link
+						span Дилерам
+			.mobile-actions 
+				a(href="index.html")
+					svg(width="28" height="26")
+						use(href="#main-mobile-icn")
+				a(href="")
+					svg(width="25" height="23")
+						use(href="#search-mobile-icn")
+				a(href="")
+					svg(width="27" height="26")
+						use(href="#basket-mobile-icn") 
+				a(href="")
+					svg(width="22" height="27")
+						use(href="#lk-mobile-icn") 
+		.header__actions 
+			a#search(href="search.html")
+				svg(width="18" height="18")
+					use(href="#search-icn") 
+			a(href="authorization.html") 
+				svg(width="15" height="18")
+					use(href="#lk-icn") 
+			a(href="basket.html" data-count="1").header__actions-basket
+				svg(width="20" height="20")
+					use(href="#basket-icn") 
+		button.burger

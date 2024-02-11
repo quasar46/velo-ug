@@ -1,0 +1,33 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @media (max-width: 479px) {
+    margin-bottom: 14px;
+  }
+}
+
+.breadcrumbs__list {
+  display: flex;
+  & > * {
+    font-size: 14px;
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+        display: inline;
+        padding: 0 3px;
+      }
+    }
+    &:not(:last-child) {
+      &:hover {
+        color: #000000;
+        transition: color 0.3s ease;
+      }
+    }
+    &:last-child {
+      color: #bec5d8;
+    }
+    @media (max-width: 479px) {
+      font-size: 12px;
+    }
+  }
+}

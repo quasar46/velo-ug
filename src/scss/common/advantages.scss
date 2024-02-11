@@ -1,0 +1,116 @@
+.advantages {
+  position: relative;
+  padding-bottom: 120px;
+  @media (max-width: 1600px) {
+    padding-bottom: 90px;
+  }
+  @media (max-width: 999px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 479px) {
+    padding-bottom: 35px;
+  }
+}
+
+.advantages__wrapper {
+  display: grid;
+  grid-template-columns: auto 764px;
+  justify-content: space-between;
+  @media (max-width: 1600px) {
+    grid-template-columns: auto 602px;
+  }
+  @media (max-width: 1279px) {
+    grid-template-columns: auto 427px;
+  }
+  @media (max-width: 999px) {
+    grid-template-columns: auto 332px;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    max-width: 244px;
+    padding: 0;
+  }
+  @media (max-width: 479px) {
+    max-width: 100%;
+    padding: 0 17px;
+    text-align: center;
+  }
+}
+
+.advantages__slogan {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.7;
+
+  span {
+    &:first-child {
+      font-size: 180px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Montserrat;
+      @media (max-width: 1600px) {
+        font-size: 140px;
+      }
+      @media (max-width: 1279px) {
+        font-size: 138px;
+      }
+      @media (max-width: 999px) {
+        font-size: 104px;
+      }
+      @media (max-width: 767px) {
+        font-size: 63px;
+      }
+      @media (max-width: 479px) {
+        font-size: 78px;
+      }
+    }
+    &:last-child {
+      font-size: 127px;
+      font-weight: 400;
+      @media (max-width: 1600px) {
+        font-size: 99px;
+      }
+      @media (max-width: 999px) {
+        font-size: 76px;
+      }
+      @media (max-width: 767px) {
+        font-size: 47px;
+      }
+      @media (max-width: 479px) {
+        font-size: 54px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+.advantages__title {
+  margin-bottom: 20px;
+  @media (max-width: 999px) {
+    margin-bottom: 10px;
+  }
+}
+
+.advantages__text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #585b78;
+  margin: 0;
+  @media (max-width: 1600px) {
+    font-size: 17px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 16px;
+  }
+  @media (max-width: 999px) {
+    font-size: 14px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}

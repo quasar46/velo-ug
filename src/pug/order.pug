@@ -1,0 +1,62 @@
+extends templates/layout-blue
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Оформление заказа
+
+        .order  
+            h2._container.order__title.title Оформление заказа
+            .order__wrapper._container
+                form.big-form(id="form" novalidate)
+                    .order__wrapper-col
+                        .order__content.order__content--mode
+                            h3.order__content-title Данные получателя
+                            .form__inner 
+                                .form__item
+                                    input.form__input.form__name(type="text" required)
+                                    label.form__label(for="") Имя <span>*</span>
+                                .form__item
+                                    input.form__input.form__last-name(type="text" required)
+                                    label.form__label(for="") Фамилия <span>*</span>
+                                .form__item
+                                    input.form__input.form__phone.tel(type="text" minlength="10" required)
+                                    label.form__label(for="") Телефон <span>*</span>
+                                .form__item
+                                    input.form__input.form__email(type="email" required)
+                                    label.form__label(for="") Электронная почта <span>*</span>
+                        .order__wrapper-col
+                            .order__content.order__content--mode
+                                h3.order__content-title Адрес получателя
+                                .form__inner 
+                                    .form__item
+                                        input.form__input.form__name(type="text" required)
+                                        label.form__label(for="") Страна <span>*</span>
+                                    .form__item
+                                        input.form__input.form__last-name(type="text" required)
+                                        label.form__label(for="") Регион/Область <span>*</span>
+                                    .form__item
+                                        input.form__input.form__phone(type="text" required)
+                                        label.form__label(for="") Город  <span>*</span>
+                                    .form__item
+                                        input.form__input(type="text" required)
+                                        label.form__label(for="") Почтовый индекс <span>*</span>
+                                p.order__content-text После получения вашей заявки, менеджер свяжется с вами для уточненя деталей.
+                .order__total
+                    .order__total-head
+                        h3.order__total-title О заказе
+                    .order__total-content 
+                        .order__total-row 
+                            span Товары, 1 шт
+                            span 10 821 ₽
+                        .order__total-row 
+                            span Итого
+                            span 10 821 ₽
+                    .order__total-footer
+                        input(type="submit" form="form" value="Заказать").btn-light.order__total-btn
+                        .consent Нажимая на кнопку, вы соглашетесь с 
+                            a(href="") Условиями обработки персональных данных
+
+    script(src="js/mask.js")

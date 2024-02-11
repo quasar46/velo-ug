@@ -1,0 +1,166 @@
+.goods {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  background: radial-gradient(
+    161.79% 161.79% at 50% 62.54%,
+    #fbfcff 0%,
+    #edf0ff 19.01%,
+    #ebefff 29.27%,
+    #f1f6fd 44.9%,
+    #a5b4ff 75.1%
+  );
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16%;
+    height: 390px;
+    width: 100%;
+    background-image: url("../img/mountains5.png");
+    background-size: 1920px auto;
+    @media (max-width: 999px) {
+      top: -13%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    height: 390px;
+    width: 100%;
+    background-image: url("../img/mountains6.png");
+    background-size: 1920px auto;
+  }
+}
+
+.goods__wrapper {
+  position: relative;
+}
+
+.goods__btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+  @media (max-width: 1919px) {
+    justify-content: flex-start;
+    position: static;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.goods__title {
+  margin-bottom: 50px;
+  @media (max-width: 1919px) {
+    margin-bottom: 20px;
+  }
+}
+
+.goods__brend {
+  max-width: 385px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.goods__content {
+  max-width: 515px;
+  width: 100%;
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  @media (max-width: 999px) {
+    max-width: 100%;
+  }
+}
+
+.goods__list {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.goods__list-item {
+  list-style: disc;
+  list-style-position: inside;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.goods__text {
+  margin-bottom: 40px;
+}
+
+.goods__btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media (max-width: 767px) {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.goods__btns::-webkit-scrollbar {
+  display: none;
+}
+
+.goods__btns {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.goods__btns-item {
+  font-size: 18px;
+  font-weight: 400;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 100px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.goods__btns-item.tab-btn-active {
+  color: #fff;
+  background-color: #0069c6;
+}
+
+.goods__pic {
+  background-image: url("../img/back-mountains.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goods__item {
+  display: flex;
+  gap: 220px;
+  justify-content: space-between;
+  @media (max-width: 1919px) {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  @media (max-width: 999px) {
+    flex-direction: column;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}

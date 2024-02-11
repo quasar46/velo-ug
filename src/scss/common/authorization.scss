@@ -1,0 +1,38 @@
+.authorization {
+	max-width: 626px;
+	width: 100%;
+	padding: 50px 75px;
+	background-color: #fff;
+	border-radius: 15px;
+	@media (max-width: 767px) {
+		padding: 19px 17px;
+	}
+}
+
+.authorization__title {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 25px;
+	text-align: center;
+	@media (max-width: 767px) {
+		font-size: 14px;
+		text-align: left;
+		margin-bottom: 18px;
+	}
+}
+
+.authorization__form {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 767px) {
+		gap: 10px;
+	}
+}
+
+.authorization__submit {
+	@media (max-width: 767px) {
+		height: 50px;
+		font-size: 16px;
+	}
+}

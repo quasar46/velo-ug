@@ -1,0 +1,13 @@
+.goods {
+  .tab-pane:not(.tab-pane-show) {
+    display: none;
+  }
+}
+
+.product {
+  @media (max-width: 999px) {
+    .tab-pane:not(.tab-pane-show) {
+      display: none;
+    }
+  }
+}

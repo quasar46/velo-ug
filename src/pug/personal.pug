@@ -1,0 +1,47 @@
+extends templates/layout-blue
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                a.breadcrumbs__link(href="") Авторизация
+                span Личный кабинет
+        .personal._container 
+            .sidebar 
+                .sidebar__content
+                    a.sidebar__link.active
+                        svg(width="24" height="24")
+                            use(href="#personal-icn")
+                        span Персональная информация
+                    a.sidebar__link(href="history.html")
+                        svg(width="24" height="24")
+                            use(href="#history-icn")
+                        span История заказов
+                .sidebar__footer
+                    a.sidebar__link.sidebar__link--footer(href="") 
+                        svg(width="24" height="24")
+                            use(href="#exit-icn")
+                        span Выйти
+            .personal__content 
+                h2.personal__title Персональная информация
+                .personal__inner
+                    form.form
+                        .form__inner 
+                            .form__item
+                                input.form__input.form__name(type="text" required)
+                                label.form__label(for="") Имя <span>*</span>
+                            .form__item
+                                input.form__input.form__last-name(type="text" required)
+                                label.form__label(for="") Фамилия <span>*</span>
+                            .form__item
+                                input.form__input.form__phone.tel(type="text" required)
+                                label.form__label(for="") Телефон <span>*</span>
+                            .form__item
+                                input.form__input.form__email(type="email" required)
+                                label.form__label(for="") Электронная почта <span>*</span>
+                        input.btn-default.form__submit(type="submit" value="Сохранить изменения") 
+
+
+
+    script(src="js/mask.js")                        

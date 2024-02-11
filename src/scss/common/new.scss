@@ -1,0 +1,136 @@
+.new {
+  background-color: #fff;
+  background-image: url("../img/mountains4.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  padding-bottom: 100px;
+  @media (max-width: 1279px) {
+    padding-bottom: 50px;
+  }
+}
+
+.new__descr {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 575px;
+  margin: auto;
+  margin-bottom: 50px;
+  @media (max-width: 1919px) {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 16px;
+  }
+  @media (max-width: 999px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 479px) {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+}
+
+.new__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 32px;
+  span {
+    font-size: 46px;
+    font-weight: 900;
+    font-family: Inter;
+    font-style: italic;
+    @media (max-width: 1919px) {
+      font-size: 44px;
+    }
+    @media (max-width: 999px) {
+      font-size: 40px;
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+    @media (max-width: 479px) {
+      font-size: 19px;
+    }
+  }
+  img {
+    width: 360px;
+    @media (max-width: 1919px) {
+      width: 347px;
+    }
+    @media (max-width: 999px) {
+      width: 308px;
+    }
+    @media (max-width: 767px) {
+      width: 233px;
+    }
+    @media (max-width: 479px) {
+      width: 155px;
+    }
+  }
+  @media (max-width: 1919px) {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 999px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 479px) {
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+}
+
+.new__pic {
+  position: relative;
+  width: 1223px;
+  margin: auto;
+  z-index: 1;
+  @media (max-width: 1919px) {
+    width: 922px;
+  }
+  @media (max-width: 999px) {
+    width: 727px;
+  }
+  @media (max-width: 767px) {
+    width: 470px;
+  }
+  @media (max-width: 479px) {
+    width: 304px;
+  }
+  figcaption {
+    position: absolute;
+    background-color: #fff;
+    padding: 35px 24px 35px 44px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 105, 198, 0.25);
+    bottom: 161px;
+    width: 463px;
+    right: -50px;
+    font-size: 18px;
+    line-height: 145%;
+    .close {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.19));
+      left: 50%;
+      transform: translateX(-50%);
+      top: -45px;
+      cursor: pointer;
+    }
+    @media (max-width: 1919px) {
+      display: none;
+    }
+  }
+}

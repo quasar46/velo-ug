@@ -1,0 +1,117 @@
+.location {
+  position: relative;
+  margin-bottom: -200px;
+  @media (max-width: 479px) {
+    margin-bottom: -100px;
+  }
+
+  &--mount {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 311px;
+      width: 100%;
+      height: 457px;
+      background-image: url("../img/mountains2.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% auto;
+      z-index: 10;
+      @media (max-width: 1919px) {
+        bottom: 235px;
+        height: 355px;
+      }
+      @media (max-width: 999px) {
+        bottom: 28px;
+      }
+      @media (max-width: 767px) {
+        bottom: -108px;
+      }
+      @media (max-width: 479px) {
+        bottom: -94px;
+        height: 270px;
+      }
+    }
+  }
+}
+
+.location #map {
+  position: relative;
+  height: 716px;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  overflow: hidden;
+
+  @media (max-width: 1919px) {
+    height: 556px;
+  }
+  @media (max-width: 999px) {
+    height: 360px;
+  }
+  @media (max-width: 767px) {
+    height: 234px;
+  }
+  @media (max-width: 479px) {
+    height: 166px;
+  }
+}
+
+.location__head {
+  display: flex;
+  gap: 17px;
+  @media (max-width: 1919px) {
+    gap: 15px;
+  }
+  @media (max-width: 999px) {
+    gap: 10px;
+  }
+  &--mode {
+    @media (max-width: 767px) {
+      flex-direction: column;
+      margin-bottom: 10px;
+      .location__title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.location__title {
+  margin-bottom: 40px;
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.location__place {
+  font-size: 40px;
+  font-weight: 500;
+  color: #0069c6;
+  @media (max-width: 1919px) {
+    font-size: 32px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 24px;
+  }
+  @media (max-width: 999px) {
+    font-size: 22px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.location__wrapper {
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.location__wrapper--mount {
+  padding-bottom: 50px;
+  @media (max-width: 999px) {
+    padding-bottom: 20px;
+  }
+}

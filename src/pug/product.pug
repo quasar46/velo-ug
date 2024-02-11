@@ -1,0 +1,368 @@
+extends templates/layout
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                a.breadcrumbs__link(href="") Каталог
+                a.breadcrumbs__link(href="") Велосипед
+                span PULSE
+        .product._container 
+            .product__main 
+                .gallery-container 
+                    a(href="").advant 
+                        img(src="img/advant.png" alt="")
+                    .swiper-container.gallery-main 
+                        .swiper-wrapper 
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                            .swiper-slide
+                                img(src="img/products/item1.png" alt="")
+                                button.favorite 
+                                    svg(width="24" height="24")
+                                        use(href="#heart-icn")
+                        .swiper-pagination
+
+                    .gallery-thumbs-wrap
+                        .swiper-container.gallery-thumbs 
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="")
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="")
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="")
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="")
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="")
+                                .swiper-slide
+                                    img(src="img/products/item1.png" alt="") 
+                        .swiper-button-prev 
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2797 10.0334L8.93306 5.68676C8.41973 5.17342 7.57973 5.17342 7.06639 5.68676L2.71973 10.0334" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        .swiper-button-next 
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2797 5.9668L8.93306 10.3135C8.41973 10.8268 7.57973 10.8268 7.06639 10.3135L2.71973 5.9668" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                .character 
+                    .character__head
+                        .character__brend pulse 
+                        .character__title Горный велосипед PULSE, скоростной, дисковые тормоза, 20", SHIMANO, 2023
+                        .character__sub 
+                            span Код товара: 1214998734
+                            span    
+                                svg(width="14" height="14")
+                                    use(href="#char-icn")
+                                | Характеристики
+                        a(href="").character__link Перейти к описанию → 
+                    .character__content 
+                        .character__price 
+                            span.character__price-old 26 264 ₽
+                            span.character__price-new 10 821 ₽
+                        .character__colors 
+                            span Цвет: 
+                            span Оранжевый
+                            .character__colors-block.select-block
+                                .item 
+                                    input(type="radio" name="colorVel" id="colorVel1" checked)
+                                    label(for="colorVel1") 
+                                        img(src="img/products/char1.png" alt="")
+                                .item 
+                                    input(type="radio" name="colorVel" id="colorVel2")
+                                    label(for="colorVel2") 
+                                        img(src="img/products/char1.png" alt="")
+                                .item 
+                                    input(type="radio" name="colorVel" id="colorVel3")
+                                    label(for="colorVel3") 
+                                        img(src="img/products/char1.png" alt="")
+                                .item 
+                                    input(type="radio" name="colorVel" id="colorVel4")
+                                    label(for="colorVel4") 
+                                        img(src="img/products/char1.png" alt="")
+                        .character__type 
+                            span Диаметр колес, дюймы:
+                            .character__type-block.select-block 
+                                .item 
+                                    input(type="radio" name="wheel" id="wheel1" checked)
+                                    label(for="wheel1") 20
+                                .item 
+                                    input(type="radio" name="wheel" id="wheel2")
+                                    label(for="wheel2") 24
+                                .item 
+                                    input(type="radio" name="wheel" id="wheel3")
+                                    label(for="wheel3") 26
+                                .item 
+                                    input(type="radio" name="wheel" id="wheel4")
+                                    label(for="wheel4") 27,5
+                                .item 
+                                    input(type="radio" name="wheel" id="wheel5")
+                                    label(for="wheel5") 29
+                    .character__footer 
+                        button.btn-default.character__btn Добавить в корзину
+                        button.btn-light.character__btn Купить в один клик
+            .container2
+                .block-params.tab#tab-1
+                    .block-params__head.tab-nav
+                        button.tab-btn.tab-btn-active(data-target-id="0") Описание
+                        button.tab-btn(data-target-id="1") Характеристики
+                        button.tab-btn(data-target-id="2") Инструкции
+                    .tab-content
+                        .descr.tab-pane.tab-pane-show(data-id="0")
+                            .descr__head
+                                h2.descr__title.title.block-params__title Описание
+                                p Горный велосипед PULSE с колесами диаметром 20 дюймов идеально подходит для подростков мальчиков и девочек с ростом от 100 до 130 см. Этот велосипед отличный выбор для катания как в парке, так и по пересеченной местности. Он оснащен трансмиссией Shimano, что гарантирует плавное и эффективное передвижение. Механические дисковые тормоза обеспечивают надежное и безопасное торможение, а передняя амортизационная вилка добавляет комфорта и сглаживает неровности дороги для более приятного катания.
+                            .descr__blocks
+                                .descr__block 
+                                    .descr__col 
+                                        span БЕЗОПАСНОСТь
+                                        p Дисковые – мощные и надежные, не требуют подстройки. Дисковый гидравлический – наиболее продвинутый вид тормозов. Используется в основном в профессиональном спорте.
+                                    img(src="img/descr/item1.png" alt="")
+                                .descr__block
+                                    .descr__col 
+                                        span АМОРТИЗАЦИЯ
+                                        p Пружинно-эластомерная вилка с ходом 80 мм, регулировкой жесткости Preload и блокировкой.
+                                    img(src="img/descr/item2.png" alt="")
+                                .descr__block
+                                    .descr__col 
+                                        span ПЛАВНЫЙ ХОД
+                                        p Колеса нового стандарта 20 дюймов гарантируют хорошую скорость, а покрышки PULSE 20*2,125 с дорожным протектором обеспечивают отличную проходимость.
+                                    img(src="img/descr/item3.png" alt="")
+                                .descr__block
+                                    .descr__col 
+                                        span УПРАВЛЯЕМОСТЬ
+                                        p SHIMANO  RD-TZ500 - переключатели, SHIMANO RS-35 - шифтеры, обеспечивают удобный и точный выбор передач на 6 скоростей, придавая вашей поездке комфорт и удовольствие.
+                                    img(src="img/descr/item4.png" alt="")
+                                .descr__block
+                                    .descr__col 
+                                        span Надежность
+                                        p Двойные алюминиевые обода, усиленные для выдерживания нагрузки до 80 кг, обеспечивают надежную поддержку. Рама велосипеда изготовлена с использованием технологии техноформинга из легкой стали, что позволяет значительно снизить вес велосипеда и обеспечить комфортное управление.
+                                    img(src="img/descr/item5.png" alt="")
+                                .descr__block
+                                    .descr__col 
+                                        span Комфорт
+                                        p Регулируемая высота сиденья обеспечивает дополнительный комфорт во время катания.
+                                    img(src="img/descr/item6.png" alt="")
+
+                        .characters.tab-pane(data-id="1")
+                            h2.characters__title.title.block-params__title Характеристики
+                            .table
+                                table 
+                                    thead 
+                                        tr
+                                            th(colspan="2") Технические характеристики
+                                            th
+                                    tbody 
+                                        tr 
+                                            td Сезонность
+                                            td 2023
+                                    thead 
+                                        tr 
+                                            th(colspan="2") Колеса
+                                            th
+                                    tbody 
+                                        tr
+                                            td Тип обода
+                                            td Двойной
+                                        tr
+                                            td Материал обода
+                                            td Алюминиевый сплав
+                                        tr
+                                            td Наименование покрышек
+                                            td PULSE 20*2.125
+                                        tr
+                                            td Материал втулок
+                                            td Легированная сталь
+                                    thead 
+                                        tr 
+                                            th(colspan="2") Вилка
+                                            th
+                                    tbody 
+                                        tr
+                                            td Наименование вилки
+                                            td PULSE
+                                        tr
+                                            td Конструкция вилки
+                                            td Пружинно-эластомерная
+                                        tr
+                                            td Ход вилки, мм
+                                            td 80
+                                        tr
+                                            td Регулировка жесткости вилки
+                                            td PULSE 20*2.125
+                                a(href="").table__link Смотреть все характеристики
+
+
+                        .instruction.tab-pane(data-id="2")
+                            .instruction__wrapper 
+                                .instruction__head 
+                                    .instruction__head 
+                                        h2.instruction__title.title.block-params__title Инструкции к товару
+                                video.insctruction__video(src="video.mp4" controls autoplay poster="img/poster.png") 
+
+            .block-carousel 
+                .block-carousel__head
+                    h2.block-carousel__title.title  Также смотрят
+                    a(href="catalog.html").link-arrow Смотреть больше
+                        svg(width="25" height="24")
+                            use(href="#arrow-icn") 
+                .swiper.swiper-other
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+
+            .block-carousel 
+                .block-carousel__head
+                    h2.block-carousel__title.title  С этим товаром покупают
+                    a(href="catalog.html").link-arrow Смотреть больше
+                        svg(width="25" height="24")
+                            use(href="#arrow-icn") 
+                .swiper.swiper-buy
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+                        .swiper-slide 
+                            .card 
+                                .card__pic
+                                    img(src="img/popular/item1.png" alt="")
+                                .card__content
+                                    .card__price 
+                                        span.card__price-new 27 085 ₽
+                                        span.card__price-old 57 000 ₽
+                                    a(href="").card__descr Горный велосипед KMS диаметр 26”
+                                button.btn-default.card__btn Выбрать
+
+
+        .location 
+            .location__wrapper._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    .location__place Ростов-на-дону
+            #map

@@ -1,0 +1,133 @@
+.footer {
+  background-color: #001633;
+  //   height: 297px;
+  padding: 70px 0;
+  position: relative;
+  margin-top: 200px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 97%;
+    width: 100%;
+    left: 0;
+    height: 231px;
+    background-image: url("../img/mountains3.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 1919px) {
+      height: 180px;
+    }
+    @media (max-width: 1279px) {
+      background-image: url("../img/mountation3-2.png");
+    }
+    @media (max-width: 999px) {
+      height: 128px;
+    }
+    @media (max-width: 767px) {
+      height: 84px;
+      background-position: center bottom;
+    }
+    @media (max-width: 479px) {
+      height: 57px;
+      bottom: 99%;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding: 50px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 55px 0;
+  }
+  @media (max-width: 479px) {
+    padding: 60px 0;
+    margin-top: 100px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 50px;
+  @media (max-width: 999px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px 20px;
+  }
+  @media (max-width: 767px) {
+  }
+  @media (max-width: 479px) {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.footer__logo {
+  margin-right: 158px;
+  @media (max-width: 1919px) {
+    margin-right: 60px;
+  }
+  @media (max-width: 1279px) {
+    position: absolute;
+    left: 386px;
+    top: -76px;
+    width: 69px;
+  }
+  @media (max-width: 999px) {
+    left: 269px;
+    top: -60px;
+  }
+  @media (max-width: 767px) {
+    top: -24px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 479px) {
+    top: -1px;
+  }
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 500;
+  @media (max-width: 1919px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 15px;
+  }
+  @media (max-width: 999px) {
+    font-size: 14px;
+  }
+}
+
+.footer__link,
+.footer__text {
+  font-size: 18px;
+  font-weight: 400;
+  @media (max-width: 1919px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 13px;
+  }
+  @media (max-width: 1919px) {
+    font-size: 12px;
+  }
+}

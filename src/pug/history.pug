@@ -1,0 +1,146 @@
+extends templates/layout-blue
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                a.breadcrumbs__link(href="") Авторизация
+                span Личный кабинет
+        .personal._container 
+            .sidebar 
+                .sidebar__content
+                    a.sidebar__link(href="personal.html")  
+                        svg(width="24" height="24")
+                            use(href="#personal-icn")
+                        span Персональная информация
+                    a.sidebar__link.active
+                        svg(width="24" height="24")
+                            use(href="#history-icn")
+                        span История заказов
+                .sidebar__footer
+                    a.sidebar__link.sidebar__link--footer(href="") 
+                        svg(width="24" height="24")
+                            use(href="#exit-icn")
+                        span Выйти
+            .personal__content 
+                .personal__head
+                    h2.personal__title История заказов
+                    .personal__selects 
+                        .personal__selects-status 
+                            span Статус
+                            select
+                                option Отгружается
+                                option Отгружается
+                                option Отгружается
+                        .personal__selects-date 
+                            span Дата
+                            .personal__selects-date-input
+                                input#datepicker
+
+                .personal__inner.personal__inner--mode
+                    .table-wrap
+                        table.table-history 
+                            tr
+                                th Номер заказа
+                                th Дата заказа
+                                th Тип доставки
+                                th Тип оплаты
+                                th Стоимость
+                                th Текущий статус
+                                th
+                                th
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--ok Принят
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--pay Оплачен
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")
+
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--begin-shipped Отгружается
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")
+
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--shipped Отгружен
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")
+
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--ok Выполнен
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")
+
+                            tr
+                                td.number-order № 3620133837
+                                td 23.05.2021
+                                td Курьерская доставка
+                                td Оплата картой
+                                td.price 124 739 ₽
+                                td
+                                    button.status.status--ok Принят
+                                td 
+                                    button.close-order
+                                        svg(width="31" height="30")
+                                            use(href="#table-cross-icn")
+                                td 
+                                    svg(width="31" height="30")
+                                        use(href="#table-message-icn")

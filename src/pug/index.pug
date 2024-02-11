@@ -1,0 +1,127 @@
+extends templates/layout-main
+
+block main 
+    main
+        .main-block 
+            .main-block__wrapper._container 
+                .main-block__content
+                    h1.visually-hidden Вело юг
+                    h2.main-block__title 
+                        span Свобода движения, 
+                        span радость открытий!
+                    .main-block__descr Большой выбор велосипедов от Вело Юг 
+                    a.btn-default.main-block__btn(href="catalog.html") Перейти в каталог
+
+        .categories 
+            .categories__wrapper._container 
+                a.categories__link(href="")
+                    h3.categories__title Велосипеды горные
+                a.categories__link(href="")
+                    h3.categories__title Велосипеды детские
+                a.categories__link(href="")
+                    h3.categories__title Скейтбординг
+                a.categories__link(href="")
+                    h3.categories__title Самокаты детские и трюковые
+                a.categories__link(href="")
+                    h3.categories__title Перейти в каталог
+
+        .new 
+            .new__wrapper._container 
+                .new__descr Представляем нашу новую линейку велосипедов BLACKOUT и абсолютную новинку 2024 года SCENERIDE
+                .new__head  
+                    span BLACKOUT
+                    img(src="img/scen.png" alt="")
+                .new__content 
+                    figure.new__pic
+                        img(src="img/vel2.png" alt="")
+                        .cross.tooltip.tooltip--7(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        .cross.tooltip.tooltip--8(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        .cross.tooltip.tooltip--9(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        .cross.tooltip.tooltip--10(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        .cross.tooltip.tooltip--11(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        .cross.tooltip.tooltip--12(data-tippy-content="Трансмиссия Shimano обеспечивает удобный и точный выбор скоростей, придавая вашей поездке комфорт и удовольствие.")
+                        
+        .container
+            .advantages 
+                .advantages__wrapper._container 
+                    .advantages__slogan
+                        span 15 ЛЕТ
+                        span на рынке
+                    .advantages__content 
+                        h3.advantages__title.title Мы команда профессионалов!
+                        p.advantages__text Наш опыт и знания воплощаются в каждой детали. Год от года мы совершенствуем наши велосипеды, делая их не просто качественными, но и доступными. Наша миссия - сделать велосипедную езду максимально удобной для каждого. Покоряйте дороги с нами!
+
+            .popular 
+                .popular__wrapper._container 
+                    .popular__head 
+                        h2.popupar__title.title Популярное
+                        a(href="catalog.html").link-arrow Смотреть больше
+                            svg(width="25" height="24")
+                                use(href="#arrow-icn")
+                    .popular__items 
+                        .swiper.swiper-popular
+                            .swiper-wrapper 
+                                .swiper-slide 
+                                    .popular__item 
+                                        .popular__pic
+                                            img(src="img/popular/item1.png" alt="")
+                                        .popular__item-content
+                                            .popular__price 
+                                                span.popular__price-new 27 085 ₽
+                                                span.popular__price-old 57 000 ₽
+                                            a(href="").popular__descr Горный велосипед KMS диаметр 26”
+                                        button.btn-default.popular__btn Выбрать
+                                .swiper-slide 
+                                    .popular__item 
+                                        .popular__pic 
+                                            img(src="img/popular/item2.png" alt="")
+                                        .popular__item-content
+                                            .popular__price 
+                                                span.popular__price-new 27 085 ₽
+                                                span.popular__price-old 57 000 ₽
+                                            a(href="").popular__descr Горный велосипед KMS диаметр 26”
+                                        button.btn-default.popular__btn Выбрать
+                                .swiper-slide 
+                                    .popular__item 
+                                        .popular__pic 
+                                            img(src="img/popular/item3.png" alt="")
+                                        .popular__item-content
+                                            .popular__price 
+                                                span.popular__price-new 27 085 ₽
+                                                span.popular__price-old 57 000 ₽
+                                            a(href="").popular__descr Горный велосипед KMS диаметр 26”
+                                        button.btn-default.popular__btn Выбрать
+                                .swiper-slide 
+                                    .popular__item 
+                                        .popular__pic 
+                                            img(src="img/popular/item4.png" alt="")
+                                        .popular__item-content
+                                            .popular__price 
+                                                span.popular__price-new 27 085 ₽
+                                                span.popular__price-old 57 000 ₽
+                                            a(href="").popular__descr Горный велосипед KMS диаметр 26”
+                                        button.btn-default.popular__btn Выбрать
+                                .swiper-slide 
+                                    .popular__item 
+                                        .popular__pic 
+                                            img(src="img/popular/item4.png" alt="")
+                                        .popular__item-content
+                                            .popular__price 
+                                                span.popular__price-new 27 085 ₽
+                                                span.popular__price-old 57 000 ₽
+                                            a(href="").popular__descr Горный велосипед KMS диаметр 26”
+                                        button.btn-default.popular__btn Выбрать
+
+            .instruction
+                .instruction__wrapper._container 
+                    .instruction__head 
+                        h2.instruction__title.title Наши велосипеды легко собираются 
+                        .instruction__descr Убедитесь в этом сами, просмотр видео займёт 5 минут
+                    video.insctruction__video(src="video.mp4" controls autoplay poster="img/poster.png") 
+
+        .location.location--mount
+            .location__wrapper.location__wrapper--mount._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    .location__place Ростов-на-дону
+            #map.map

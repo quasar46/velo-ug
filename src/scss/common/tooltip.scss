@@ -1,0 +1,396 @@
+.tooltip {
+  position: absolute;
+  z-index: 10;
+  &--1 {
+    top: 113px;
+    left: 442px;
+    @media (max-width: 1919px) {
+      top: 93px;
+      left: 326px;
+    }
+    @media (max-width: 1279px) {
+      top: 63px;
+      left: 263px;
+    }
+    @media (max-width: 999px) {
+      left: 219px;
+    }
+    @media (max-width: 767px) {
+      left: 131px;
+      top: 34px;
+    }
+    @media (max-width: 479px) {
+      left: 90px;
+      top: 23px;
+    }
+  }
+  &--2 {
+    top: 243px;
+    left: 705px;
+    @media (max-width: 1919px) {
+      top: 172px;
+      left: 504px;
+    }
+    @media (max-width: 1279px) {
+      top: 140px;
+      left: 402px;
+    }
+    @media (max-width: 999px) {
+      top: 114px;
+      left: 341px;
+    }
+    @media (max-width: 767px) {
+      top: 71px;
+      left: 192px;
+    }
+    @media (max-width: 479px) {
+      left: 130px;
+      top: 46px;
+    }
+  }
+  &--3 {
+    top: 180px;
+    left: 925px;
+    @media (max-width: 1919px) {
+      top: 133px;
+      left: 665px;
+    }
+    @media (max-width: 1279px) {
+      top: 106px;
+      left: 534px;
+    }
+    @media (max-width: 999px) {
+      top: 83px;
+      left: 445px;
+    }
+    @media (max-width: 767px) {
+      top: 51px;
+      left: 268px;
+    }
+    @media (max-width: 479px) {
+      top: 30px;
+      left: 176px;
+    }
+  }
+  &--4 {
+    bottom: 310px;
+    left: 304px;
+    @media (max-width: 1919px) {
+      bottom: 226px;
+      left: 207px;
+    }
+    @media (max-width: 1279px) {
+      bottom: 182px;
+      left: 161px;
+    }
+    @media (max-width: 999px) {
+      bottom: 150px;
+      left: 136px;
+    }
+    @media (max-width: 767px) {
+      bottom: 92px;
+      left: 82px;
+    }
+    @media (max-width: 479px) {
+      bottom: 62px;
+      left: 53px;
+    }
+  }
+  &--5 {
+    left: 988px;
+    top: 322px;
+    @media (max-width: 1919px) {
+      left: 726px;
+      top: 247px;
+    }
+    @media (max-width: 1279px) {
+      left: 563px;
+      top: 187px;
+    }
+    @media (max-width: 999px) {
+      left: 476px;
+      top: 151px;
+    }
+    @media (max-width: 767px) {
+      left: 215px;
+      top: 110px;
+    }
+    @media (max-width: 479px) {
+      left: 117px;
+      top: 110px;
+    }
+  }
+
+  &--6 {
+    left: 1223px;
+    top: 742px;
+    @media (max-width: 1919px) {
+      left: 887px;
+      top: 530px;
+    }
+    @media (max-width: 1279px) {
+      left: 723px;
+      top: 409px;
+    }
+    @media (max-width: 999px) {
+      left: 610px;
+      top: 335px;
+    }
+    @media (max-width: 767px) {
+      left: 368px;
+      top: 188px;
+    }
+    @media (max-width: 479px) {
+      left: 241px;
+      top: 137px;
+    }
+  }
+  &--7 {
+    top: 30px;
+    right: 348px;
+    @media (max-width: 1919px) {
+      top: 36px;
+      right: 293px;
+    }
+    @media (max-width: 999px) {
+      top: 46px;
+      right: 229px;
+    }
+    @media (max-width: 767px) {
+      top: 31px;
+      right: 154px;
+    }
+    @media (max-width: 479px) {
+      top: 16px;
+      right: 97px;
+    }
+  }
+  &--8 {
+    top: 293px;
+    right: 504px;
+    @media (max-width: 1919px) {
+      top: 241px;
+      right: 397px;
+    }
+    @media (max-width: 999px) {
+      top: 148px;
+      right: 275px;
+    }
+    @media (max-width: 767px) {
+      top: 112px;
+      right: 192px;
+    }
+    @media (max-width: 479px) {
+      top: 61px;
+      right: 116px;
+    }
+  }
+  &--9 {
+    top: 316px;
+    right: 635px;
+    @media (max-width: 1919px) {
+      top: 227px;
+      right: 469px;
+    }
+    @media (max-width: 999px) {
+      top: 170px;
+      right: 356px;
+    }
+    @media (max-width: 767px) {
+      top: 122px;
+      right: 250px;
+    }
+    @media (max-width: 479px) {
+      top: 78px;
+      right: 159px;
+    }
+  }
+  &--10 {
+    top: 430px;
+    right: 616px;
+    @media (max-width: 1919px) {
+      top: 312px;
+      right: 455px;
+    }
+    @media (max-width: 999px) {
+      top: 245px;
+      right: 359px;
+    }
+    @media (max-width: 767px) {
+      top: 157px;
+      right: 229px;
+    }
+    @media (max-width: 479px) {
+      top: 105px;
+      right: 152px;
+    }
+  }
+  &--11 {
+    top: 489px;
+    right: 955px;
+    @media (max-width: 1919px) {
+      top: 389px;
+      right: 730px;
+    }
+    @media (max-width: 999px) {
+      top: 323px;
+      right: 569px;
+    }
+    @media (max-width: 767px) {
+      top: 206px;
+      right: 367px;
+    }
+    @media (max-width: 479px) {
+      top: 119px;
+      right: 231px;
+    }
+  }
+  &--12 {
+    top: 342px;
+    right: 81px;
+    @media (max-width: 1919px) {
+      top: 251px;
+      right: 61px;
+    }
+    @media (max-width: 999px) {
+      top: 217px;
+      right: 30px;
+    }
+    @media (max-width: 767px) {
+      top: 140px;
+      right: 26px;
+    }
+    @media (max-width: 479px) {
+      top: 92px;
+      right: 11px;
+    }
+  }
+}
+
+.cross {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  &::before {
+    content: "+";
+    color: #fff;
+  }
+  &:hover {
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    &::before {
+      color: #ff0000;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.tippy-box {
+  padding: 35px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 105, 198, 0.25);
+  color: #131b22;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  @media (max-width: 1279px) {
+    padding: 10px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media (max-width: 479px) {
+    padding: 6px;
+  }
+}
+
+.pulse {
+  position: absolute; // Нужно будет в будущем, для позиционирования эффекта
+  text-align: center;
+  //   padding: 20px; // Отступ можете подобрать свой.
+  border-radius: 50%; // Делаем икноку круглой
+  background: #ff0000;
+  width: 20px;
+  height: 20px;
+  @media (max-width: 767px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.pulse::before {
+  content: ""; // Нужно для отображения псевдокласса
+  position: absolute;
+  border: 2px solid #ff0000; // Ширину обводки можете выбрать сами
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite; // Указываем название анимации, время, тип, и нужно ли её повторять
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.pulse::after,
+.pulse::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff0000;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+  @media (max-width: 767px) {
+    border-width: 1px;
+    top: -10px;
+    right: -10px;
+    left: -10px;
+    bottom: -10px;
+  }
+}
+
+.pulse::after {
+  animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,48 @@
+extends templates/layout-blue
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Корзина
+
+        .order  
+            h2._container.order__title.title Корзина
+            .order__wrapper._container
+                .order__content
+                    .order__pic.ga1   
+                        img(src="img/vel1.png" alt="") 
+                    .order__col.order__content-descr.ga2
+                        .order__content-title Горный велосипед PULSE, скоростной, дисковые тормоза, 20", SHIMANO, 2023
+                        ul.order__list
+                            li.order__list-item Код товара: 1214998734
+                            li.order__list-item 
+                                span Цвет: 
+                                span.order__list-value Оранжевый
+                            li.order__list-item
+                                span Диаметр колес, дюймы:
+                                span.order__list-value 27
+                    .order__col.ga3 
+                        .counter
+                            input(type="button" value="-").counter-minus
+                            .counter-number 0
+                            input(type="button" value="+").counter-plus
+                    .order__col.ga4 
+                        .order__price 
+                            span.order__price-new 10 821 ₽
+                            span.order__price-old 10 821 ₽/шт
+                .order__total
+                    .order__total-head
+                        h3.order__total-title О заказе
+                    .order__total-content 
+                        .order__total-row 
+                            span Товары, 1 шт
+                            span 10 821 ₽
+                        .order__total-row 
+                            span Итого
+                            span 10 821 ₽
+                    .order__total-footer
+                        a.btn-default.order__total-btn(href="") Перейти к оформлению
+
+

@@ -1,0 +1,124 @@
+.table {
+  margin-bottom: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  tr {
+    font-size: 16px;
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  td,
+  th {
+    padding: 14px 0;
+    border-bottom: 1px solid #dedee2;
+    text-align: left;
+    // &:first-child {
+    //   padding-left: 29px;
+    // }
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  th {
+    font-size: 14px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  td {
+    color: #939393;
+    &:nth-child(2) {
+      color: #131b22;
+    }
+  }
+}
+
+.table__link {
+  font-size: 14px;
+  color: #0069c6;
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+.table-history {
+  tr:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05),
+      0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  tr {
+    td:last-child,
+    th:last-child {
+      padding-right: 30px;
+    }
+    td,
+    th {
+      &:not(:first-child),
+      &:not(:last-child) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    td:first-child,
+    th:first-child {
+      padding-left: 30px;
+    }
+  }
+  .number-order {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e1066;
+  }
+  .price {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  td {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    color: #131b22;
+  }
+  .status {
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 10px;
+    &--ok {
+      color: #38a865;
+      background: rgba(56, 168, 101, 0.1);
+    }
+    &--pay {
+      background: rgba(55, 104, 199, 0.1);
+      color: #3768c7;
+    }
+    &--begin-shipped {
+      background: rgba(251, 96, 25, 0.1);
+      color: #fb6019;
+    }
+    &--shipped {
+      background: rgba(98, 56, 168, 0.1);
+      color: #6238a8;
+    }
+  }
+  .close-order {
+    cursor: pointer;
+  }
+}
+
+.table-wrap {
+  overflow: auto;
+}

@@ -1,0 +1,64 @@
+.brends {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+  gap: 6px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+// .brends::-webkit-scrollbar {
+//     height: 4px; /* высота для горизонтального скролла */
+//     background-color: #fff;
+// }
+
+// .brends::-webkit-scrollbar-thumb {
+//     background-color: #000;
+//     border-radius: 10px;
+// }
+
+.brends-wrap {
+	@media (max-width: 1919px) {
+		padding-right: 0;
+	}
+}
+
+.brends::-webkit-scrollbar {
+  display: none;
+}
+.brends {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.brends__item {
+  min-width: 261px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  overflow: hidden;
+  img {
+    width: 70%;
+  }
+  &:hover {
+    background-color: #dbe9ff;
+    transition: all 0.3s ease;
+  }
+  &.active {
+    border-color: #0069c6;
+  }
+  @media (max-width: 479px) {
+    min-width: 86px;
+    height: 40px;
+    font-size: 12px;
+  }
+}

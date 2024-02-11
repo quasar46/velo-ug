@@ -1,0 +1,45 @@
+extends templates/layout-mount
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Дилерам
+
+        .dealer._container
+            .dealer__head
+                h2.title.dealer__title 
+                    span Стань дилером
+                    span велосипедов Вело-юг! 
+                .dealer__descr 
+                    p Вело-юг - это российский производитель горных велосипедов, который активно работает над расширением своей бизнес-географии. 
+                    p Мы приглашаем дилеров из разных регионов России на взаимовыгодное сотрудничество, чтобы вместе развивать нашу марку и предоставлять качественные велосипеды на рынке.
+
+            form.dealer__form.form(action="" novalidate) 
+                h3.dealer__form-title Заполните форму
+                .form-dealer
+                    .form__item
+                        input.form__input(type="text" required)
+                        label.form__label ФИО <span>*</span>
+                    .form__item.w50
+                        input.form__input.tel(type="text" required)
+                        label.form__label Телефон <span>*</span>
+                    .form__item.w50
+                        input.form__input(type="text" required)
+                        label.form__label Email <span>*</span>
+                    .form__item.w50
+                        input.form__input(type="text" required)
+                        label.form__label Страна <span>*</span>
+                    .form__item.w50
+                        input.form__input(type="text" required)
+                        label.form__label Город <span>*</span>
+                    .form__item
+                        textarea.form__input.form__textarea(type="text" placeholder="Ваш сайт, пожеланя или коментарии")
+                .dealer-form__footer
+                    button.btn-default.dealer__submit(type="submit") Отправить
+                    .consent Нажимая на кнопку, вы соглашетесь с 
+                        a(href="") Условиями обработки персональных данных
+
+
+    script(src="js/mask.js")

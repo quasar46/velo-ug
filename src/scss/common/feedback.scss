@@ -1,0 +1,75 @@
+.feedback {
+  max-width: 767px;
+  margin: auto;
+  border-radius: 15px;
+  background: #f0f5fd;
+  padding: 43px 135px;
+  padding-bottom: 120px;
+  background-image: url("../img/mountains7.png");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  margin-top: 35px;
+  border: 1px solid #f0f5fd;
+  @media (max-width: 767px) {
+    padding: 30px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 479px) {
+    padding: 19px 17px;
+    padding-bottom: 80px;
+    background-size: 100% 62px;
+    margin-top: 20px;
+  }
+}
+
+.feedback__title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  @media (max-width: 479px) {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feedback__footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media (max-width: 479px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.feedback__submit {
+  height: 50px;
+  min-width: 205px;
+  font-size: 18px;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+}
+
+.feedback__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media (max-width: 767px) {
+    gap: 18px;
+  }
+}

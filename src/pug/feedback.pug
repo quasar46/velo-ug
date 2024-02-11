@@ -1,0 +1,36 @@
+extends templates/layout
+
+block main 
+    main
+        .breadcrumbs._container 
+            .breadcrumbs__list   
+                a.breadcrumbs__link(href="index.html") Главная
+                span Напишите нам
+        ._container
+            h2.title Напишите нам    
+        .feedback._container
+            h3.feedback__title Задайте свой вопрос
+            .feedback__inner 
+                form.form.feedback__form#form(novalidate)
+                    .form__item
+                        input.form__input.form__name(type="text" required)
+                        label.form__label(for="") Имя <span>*</span>
+                    .form__item
+                        input.form__input.form__phone.tel(type="text" minlength="10" required)
+                        label.form__label.tel(for="") Телефон <span>*</span>
+                    .form__item
+                        textarea.form__textarea(placeholder="Вопрос")
+                .feedback__footer 
+                    input.btn-default.feedback__submit(type="submit" value="Отправить" form="form")
+                    .consent Нажимая на кнопку, вы соглашетесь с 
+                        a(href="") Условиями обработки персональных данных
+
+        .location 
+            .location__wrapper._container
+                .location__head
+                    h2.location__title.title Где купить?
+                    .location__place Ростов-на-дону
+            #map
+
+
+    script(src="js/mask.js")
